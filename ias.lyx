@@ -6289,31 +6289,17 @@ L_{d}\left(\delta\right)=\inf\sum\delta_{i}^{d}
 \end_layout
 
 \begin_layout Standard
-№1.
- 
-\begin_inset Formula $d$
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+L_{d}\left(\delta\right)\rightarrow0_{\delta\rightarrow0} & d>>1\\
+L_{d}\left(\delta\right)\rightarrow\infty_{\delta\rightarrow0} & d<<1
+\end{cases}
+\end{equation}
+
 \end_inset
 
- велико.
- Тогда 
-\begin_inset Formula $L_{d}\left(\delta\right)\rightarrow0_{\delta\rightarrow0},d>>1$
-\end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-№2.
- 
-\begin_inset Formula $L_{d}\left(\delta\right)\rightarrow\infty_{\delta\rightarrow0},d<<1$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-№1,№2 - формула (6).
- 
 \end_layout
 
 \begin_layout Standard
@@ -7076,8 +7062,22 @@ d_{c}=-\stackrel[\delta\rightarrow0]{}{\lim}\frac{log2^{n}}{log\left(\frac{1}{3^
 предфракталами
 \series default
 .
- Снежинка Коха обладает следующим свойством - в идеале, она имеет линию
- бесконечной длины.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+31.05.17 Лекция
+\end_layout
+
+\begin_layout Subsubsection
+Снежинка Коха
+\end_layout
+
+\begin_layout Standard
+Снежинка Коха обладает следующим свойством - в идеале, она имеет линию бесконечн
+ой длины.
  Снежинка Коха - линия бесконечной длины, которая ограничивает конечную
  площадь.
 \end_layout
@@ -7169,46 +7169,556 @@ d_{c}=-\stackrel[\delta\rightarrow0]{}{\lim}\frac{log2^{n}}{log\left(\frac{1}{3^
  бесконечную огибающую.
 \end_layout
 
-\begin_layout Standard
-Рассмотрим салфетку Серпинского.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Пропущена предыщая пара ???
-\end_layout
-
-\begin_layout Subsubsection
-Снежинка Коха
-\end_layout
-
 \begin_layout Subsubsection
 Салфетка Серпинского
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{c}=-\frac{\ln p}{\ln\Gamma}$
+\end_inset
+
+, 
+\begin_inset Formula $p=3$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma=\frac{1}{2}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow d_{c}=-\frac{\ln3}{\ln2}=-1.5849<2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Посчитаем суммарную площадь исключенных частей.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{4}+3\cdot\left(\frac{1}{4}\right)^{2}+3^{2}\left(\frac{1}{4}\right)^{3}+...+3^{n-1}\cdot\left(\frac{1}{4}\right)^{n}=\frac{1}{4}\left[1+3\cdot\frac{1}{4}+3^{2}\left(\frac{1}{4}\right)^{2}+...+3^{n-1}\cdot\left(\frac{1}{4}\right)^{n-1}\right]=\frac{1}{4}\left[\frac{1}{1-3/4}\right]=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Площадь салфетки Серпинского равна нулю.
+ Это означает, что 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+ есть треугольник такой, что все плоощади не превосходят 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+, а с другой стороны.
+\end_layout
+
+\begin_layout Standard
+Периметр 
+\series bold
+искма
+\series default
+ треугольников: 
+\end_layout
+
+\begin_layout Standard
+на первом шаге периметр центрального треугольника 
+\begin_inset Formula $=\frac{3}{2}$
+\end_inset
+
+ (сторона большего треугольника = 1)
+\end_layout
+
+\begin_layout Standard
+На втором шаге периметр 
+\begin_inset Formula $=\left(\frac{3}{2}\right)^{2}=\frac{9}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+На 
+\begin_inset Formula $n$
+\end_inset
+
+-м шаге периметр периметр 
+\begin_inset Formula $=\left(\frac{3}{2}\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p^{\left(n\right)}=\sum_{k=1}^{n}\left(\frac{3}{2}\right)^{k}=\frac{3}{2}\cdot\frac{1-\left(3/2\right)^{n}}{1-3/2}=3\left[\left(\frac{3}{2}\right)^{n}-1\right]\approx3\cdot\left(\frac{3}{2}\right)^{n}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p^{\left(n\right)}\equiv3\cdot\left(\frac{3}{2}\right)^{n}=a\delta^{1-d},a=3,d\text{ из (17)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+По аналогии с салфеткой Серпинского можно построить ковер Серпинского.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{c}=-\frac{\ln8}{\ln3}=1.8928<2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ковер Серпинского менее ферлевый, чем салфетка.
 \end_layout
 
 \begin_layout Subsubsection
 Губка Менгера.
 \end_layout
 
+\begin_layout Standard
+Губка Менгера - похож на ковер Серпинского, но основан на кубах.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{c}=\frac{\ln20}{\ln3}=2.7268<3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Сосуды человека, клетки - это все фракталы.
+ 
+\end_layout
+
+\begin_layout Standard
+Фрактал выглядит одинаково в любом размере.
+ 
+\end_layout
+
 \begin_layout Subsection
 Определение фрактала через размерность.
+\end_layout
+
+\begin_layout Standard
+Фракталом называется множество, размерность Хаусдорфа-Безикевича, которого
+ строго больше его топологической размерности:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+d_{x}>d_{\tau}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{x}=1,26>1$
+\end_inset
+
+ -для снежинки Коха.
+\end_layout
+
+\begin_layout Standard
+Для всех объектов фрактальная размерность меньше, чем топологическая размерность
+ пространства, в котором они стреется.???
 \end_layout
 
 \begin_layout Subsection
 Кривые Пеано.
 \end_layout
 
+\begin_layout Standard
+Существуют фракталы, которые плотно заполняют пространство, в котором они
+ находятся, так что их фрактальная размерность 
+\begin_inset Formula $d_{c}=d$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Пиано дал ответ на этот вопрос
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Кривые Пиано 
+\series default
+- такие кривые, которые максимально плотно заполняют плоскость.
+\end_layout
+
+\begin_layout Standard
+Начальным (инициирующим) элементом здесь можно выбрать единичный квадрат,
+ каждая из сторон которого на следующем шаге заменяется генератором, показаннымн
+а картинке.
+ Он состоит из 9 отрезков длины 1/3, соединенных под прямым углом друг к
+ другу.
+ Цифры показывают способ обхода данной кривой.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Неизбежны две точки самоконтакта 2-6 и 5-9.
+ В результате исходный квадрат преобразуется
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Затем каждый из отрезков образовавшейся фигуры длиной в 1/3 преобразуется
+ подобным же образом, и так до бесконечности.
+\end_layout
+
+\begin_layout Standard
+В результате возникает самоподобная непрерывная кривая, плоно заполняющая
+ квадратную область с площадью, равной 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{c}=-\frac{\ln9}{\ln\left(\frac{1}{3}\right)}=\frac{\left(\ln3\right)^{2}}{\ln3}=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Примером кривой без точек самоконтакта:
+\end_layout
+
+\begin_layout Enumerate
+кривая Госпера
+\end_layout
+
+\begin_layout Enumerate
+Дракон Хартера-Хейтуэя
+\end_layout
+
 \begin_layout Subsection
 Функция Вейерштрасса
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено7.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эта функция всюду непрерывна и всюду недифференцируема: 
+\begin_inset Formula $w\left(x\right)=\sum_{n=1}^{\infty}a^{k}cos\left(b^{n}\pi x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Эта функция не имеет производных, если 
+\begin_inset Formula $a\in\left(0,1\right)$
+\end_inset
+
+ и 
+\begin_inset Formula $ab>1+\frac{3\pi}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Харди доказал, что эта функция недифференцируема при 
+\begin_inset Formula $a<1,b>1,ab>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Возьмем функцию 
+\begin_inset Formula $w_{1}=a\cdot cos\left(b\pi x\right)$
+\end_inset
+
+, затем на эту функцию наложим рябь: 
+\begin_inset Formula $w_{2}=a^{2}\cdot cos\left(b^{2}\pi x\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
 Итерация линейных систем
 \end_layout
 
+\begin_layout Standard
+Все самоподобные фракталы получаются в результате итераций.
+\end_layout
+
+\begin_layout Standard
+Существуют две основные группы фракталов: линейные и нелинейные.
+\end_layout
+
+\begin_layout Standard
+Метод систем итерируемых функций (СИФ) (Барнсли) - результат применения
+ называют аттрактором (коима устойчива составление процесса или хода эволюции
+ системы).
+ Метод СИФ реализуют 2 способами: Детерменированный, Метод случайных итераций
+ (игра хаоса)
+\end_layout
+
 \begin_layout Subsubsection
-Детерминированный алгорим.
+Детерминированный алгорим
+\end_layout
+
+\begin_layout Standard
+Рассмотрим салфетку Серпинского.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Поместим исходный равносторонний треугольник с длиной стороны, равной единице,
+ на комплексную плоскость [z] так, как на рисунке.
+ Как он переводится в равносторонний треугольник в два раза меньшего размера
+ (справа на картинке)?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{1}:f_{1}\left(z\right)=\frac{1}{2}z$
+\end_inset
+
+ - функция преобразования.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{2}:f_{2}\left(z\right)=\frac{1}{2}z+\frac{1}{2}$
+\end_inset
+
+ - сместили маленький треугольник по горизонтали вправо на 1/2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{3}:f_{3}\left(z\right)=\frac{1}{2}z+\frac{1}{4}+i\frac{\sqrt{3}}{4}$
+\end_inset
+
+ - верхний треугольник.
+\end_layout
+
+\begin_layout Standard
+Таким образом, 
+\begin_inset Formula $f_{1},f_{2},f_{3}$
+\end_inset
+
+ переводят исходный треугольник в три треугольника.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено9.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{0}$
+\end_inset
+
+- исходное треугльное множество
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{1}=t_{1}\left(E_{0}\right)\bigcup t_{2}\left(E_{0}\right)\bigcup t_{3}\left(E_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{2}=t_{1}\left(E_{1}\right)\bigcup t_{2}\left(E_{1}\right)\bigcup t_{3}\left(E_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{3}=t_{1}\left(E_{2}\right)\bigcup t_{2}\left(E_{2}\right)\bigcup t_{3}\left(E_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{n}=t_{1}\left(E_{n-1}\right)\bigcup t_{2}\left(E_{n-1}\right)\bigcup t_{3}\left(E_{n-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E={\displaystyle \lim_{n\rightarrow\infty}E_{n}}$
+\end_inset
+
+ - аттрактор - сафлетка Серпинского.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ - не зависит от 
+\begin_inset Formula $E_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Алгоритм 
+\begin_inset Formula $t_{1},t_{2},t_{3}$
+\end_inset
+
+ может может применять к любой другой фигуре, но все равно мы получим салфетку
+ Серпинского.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7580,10 +8090,6 @@ C:
  Если в поцессе итераций, изображающая точка уходит на бесконечность, то
  аттрактором считается бесконечно удаленная точка.
  
-\end_layout
-
-\begin_layout Standard
-Что такое хаос? ???
 \end_layout
 
 \begin_layout Standard
